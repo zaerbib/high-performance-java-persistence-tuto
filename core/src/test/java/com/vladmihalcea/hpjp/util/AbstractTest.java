@@ -395,7 +395,7 @@ public abstract class AbstractTest {
     }
 
     protected Database database() {
-        return Database.HSQLDB;
+        return Database.POSTGRESQL;
     }
 
     protected List<UserType<?>> additionalTypes() {

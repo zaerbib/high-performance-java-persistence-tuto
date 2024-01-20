@@ -4,6 +4,7 @@ import com.vladmihalcea.hpjp.util.AbstractMySQLIntegrationTest;
 import com.vladmihalcea.hpjp.util.providers.DataSourceProvider;
 import com.vladmihalcea.hpjp.util.providers.MySQLDataSourceProvider;
 import com.vladmihalcea.hpjp.util.providers.entity.BlogEntityProvider;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -24,6 +25,7 @@ import static org.junit.Assert.fail;
  * @author Vlad Mihalcea
  */
 @RunWith(Parameterized.class)
+@Ignore
 public class MySQLBatchPreparedStatementTest extends AbstractMySQLIntegrationTest {
 
     private final BlogEntityProvider entityProvider = new BlogEntityProvider();

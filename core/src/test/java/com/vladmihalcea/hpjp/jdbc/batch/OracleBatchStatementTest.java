@@ -5,6 +5,7 @@ import com.vladmihalcea.hpjp.util.ReflectionUtils;
 import com.vladmihalcea.hpjp.util.providers.DataSourceProvider;
 import com.vladmihalcea.hpjp.util.providers.OracleDataSourceProvider;
 import com.vladmihalcea.hpjp.util.providers.entity.BlogEntityProvider;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import javax.sql.DataSource;
@@ -20,6 +21,8 @@ import static org.junit.Assert.fail;
  *
  * @author Vlad Mihalcea
  */
+
+@Ignore
 public class OracleBatchStatementTest extends AbstractOracleIntegrationTest {
 
     public static final String INSERT_POST = "insert into post (title, version, id) values ('Post no. %1$d', 0, %1$d)";

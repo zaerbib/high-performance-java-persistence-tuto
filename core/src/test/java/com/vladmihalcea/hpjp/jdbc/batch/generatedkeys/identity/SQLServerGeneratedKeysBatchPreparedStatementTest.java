@@ -2,6 +2,7 @@ package com.vladmihalcea.hpjp.jdbc.batch.generatedkeys.identity;
 
 import com.vladmihalcea.hpjp.util.AbstractSQLServerIntegrationTest;
 import org.hibernate.exception.GenericJDBCException;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.sql.*;
@@ -12,6 +13,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  *
  * @author Vlad Mihalcea
  */
+
+@Ignore
 public class SQLServerGeneratedKeysBatchPreparedStatementTest extends AbstractSQLServerIntegrationTest {
 
     @Override

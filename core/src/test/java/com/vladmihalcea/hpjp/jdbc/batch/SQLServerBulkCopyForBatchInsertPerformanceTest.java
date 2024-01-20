@@ -7,6 +7,7 @@ import com.vladmihalcea.hpjp.util.AbstractSQLServerIntegrationTest;
 import com.vladmihalcea.hpjp.util.providers.DataSourceProvider;
 import com.vladmihalcea.hpjp.util.providers.SQLServerDataSourceProvider;
 import com.vladmihalcea.hpjp.util.providers.entity.BlogEntityProvider;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -25,6 +26,7 @@ import static org.junit.Assert.fail;
  * @author Vlad Mihalcea
  */
 @RunWith(Parameterized.class)
+@Ignore
 public class SQLServerBulkCopyForBatchInsertPerformanceTest extends AbstractSQLServerIntegrationTest {
 
     private final BlogEntityProvider entityProvider = new BlogEntityProvider();

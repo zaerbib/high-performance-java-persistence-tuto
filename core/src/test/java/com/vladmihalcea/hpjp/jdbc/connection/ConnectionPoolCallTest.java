@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author Vlad Mihalcea
  */
-@Ignore
+
 public class ConnectionPoolCallTest extends DatabaseProviderIntegrationTest {
 
     private final Logger LOGGER = LoggerFactory.getLogger(getClass());

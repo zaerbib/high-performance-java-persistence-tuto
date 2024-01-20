@@ -31,7 +31,7 @@ public class PostgreSQLDataSourceProvider extends AbstractContainerDataSourcePro
 
     @Override
     protected String defaultJdbcUrl() {
-        return "jdbc:postgresql://localhost/high_performance_java_persistence";
+        return "jdbc:postgresql://localhost:5432/high_performance_java_persistence";
     }
 
     protected DataSource newDataSource() {

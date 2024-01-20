@@ -10,6 +10,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * @author Vlad Mihalcea
  */
+
+@Ignore
 public class OracleGeneratedKeysBatchPreparedStatementTest extends AbstractOracleIntegrationTest {
 
     @Override

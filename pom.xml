@@ -520,6 +520,7 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
+        <!--suppress UnresolvedMavenProperty -->
         <argLine>-Xms1024m -Xmx1024m -DObjectStoreEnvironmentBean.objectStoreDir=${project.build.directory} -Dcom.arjuna.ats.arjuna.objectstore.objectStoreDir=${project.build.directory} ${cmd.args}</argLine>
 
         <slf4j.version>1.7.36</slf4j.version>
