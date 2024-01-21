@@ -313,6 +313,7 @@ public abstract class AbstractTest {
         //log settings
         properties.put("hibernate.hbm2ddl.auto", "create-drop");
         properties.put("hibernate.dialect", dataSourceProvider().hibernateDialect());
+        properties.put("hibernate.show_sql", true);
         //data source settings
         DataSource dataSource = dataSource();
         if (dataSource != null) {
