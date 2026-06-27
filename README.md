@@ -2,6 +2,28 @@
 
 The [High-Performance Java Persistence](https://vladmihalcea.com/books/high-performance-java-persistence?utm_source=GitHub&utm_medium=banner&utm_campaign=hpjp) book and video course code examples. I wrote [this article](https://vladmihalcea.com/high-performance-java-persistence-github-repository/) about this repository since it's one of the best way to test JDBC, JPA, Hibernate or even jOOQ code. Or, if you prefer videos, you can watch [this presentation on YouTube](https://www.youtube.com/watch?v=U8MoOe8uMYA).
 
+## Project Structure
+
+This project uses a multi-module Maven architecture organized by domain:
+
+| Module | Description |
+|--------|-------------|
+| **hpjp-util** | Shared utilities, base test classes, data source providers, and common domain entities |
+| **hpjp-jdbc** | JDBC-level performance tests: batch processing, caching, connections, fetching, indexing, transactions |
+| **hpjp-hibernate** | Hibernate ORM performance tests: mapping, querying, caching, batching, transactions, concurrency |
+| **hpjp-spring** | Spring Framework and Spring Data JPA performance tests: transactions, batching, partitioning, projections |
+| **jooq** | jOOQ integration examples (activated via `HPJP_JOOQ` profile) |
+
+### Module Dependencies
+
+```
+hpjp-util (shared base)
+├── hpjp-jdbc
+├── hpjp-hibernate
+├── hpjp-spring (also depends on hpjp-hibernate test-jar)
+└── jooq
+```
+
 ### Are you struggling with application performance issues?
 
 <a href="https://vladmihalcea.com/hypersistence-optimizer/?utm_source=GitHub&utm_medium=banner&utm_campaign=hpjp">

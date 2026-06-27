@@ -2,27 +2,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <parent>
-        <artifactId>high-performance-java-persistence</artifactId>
         <groupId>com.vladmihalcea</groupId>
+        <artifactId>high-performance-java-persistence</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>jooq</artifactId>
-    <packaging>pom</packaging>
 
-    <modules>
-        <module>jooq-core</module>
-        <module>jooq-mysql</module>
-        <module>jooq-pgsql</module>
-        <module>jooq-mssql</module>
-        <module>jooq-oracle</module>
-        <!--
-
-        <module>jooq-pgsql-score</module>-->
-    </modules>
+    <artifactId>hpjp-jdbc</artifactId>
+    <name>HPJP - JDBC Domain</name>
+    <description>JDBC-level performance tests: batch processing, caching, connections, fetching, indexing, transactions</description>
 
     <dependencies>
+        <dependency>
+            <groupId>com.vladmihalcea</groupId>
+            <artifactId>hpjp-util</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.vladmihalcea</groupId>
             <artifactId>hpjp-util</artifactId>
@@ -31,10 +29,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <properties>
-        <jooq.version>3.17.7</jooq.version>
-        <activation.version>1.1.1</activation.version>
-    </properties>
 
 </project>

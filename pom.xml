@@ -11,14 +11,20 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>core</module>
+        <module>hpjp-util</module>
+        <module>hpjp-jdbc</module>
+        <module>hpjp-hibernate</module>
+        <module>hpjp-spring</module>
     </modules>
 
     <profiles>
         <profile>
             <id>jooq</id>
             <modules>
-                <module>core</module>
+                <module>hpjp-util</module>
+                <module>hpjp-jdbc</module>
+                <module>hpjp-hibernate</module>
+                <module>hpjp-spring</module>
                 <module>jooq</module>
             </modules>
             <activation>
